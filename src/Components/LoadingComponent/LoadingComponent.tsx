@@ -1,16 +1,20 @@
 import styled from "styled-components";
-import loading from "../../assets/Loading.svg";
 
 const Container = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const LoadingMsg = styled.p`
+  text-align: center;
+  font-size: 1.5rem;
 `;
 
 export const LoadingComponent = () => {
   return (
     <Container>
-      <img src={loading} />
+      <LoadingMsg>Loading..</LoadingMsg>
     </Container>
   );
 };
